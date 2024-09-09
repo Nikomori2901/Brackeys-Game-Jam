@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class ReputationResource : Resource
 {
-    public static Action onReputationChange;
+    public static Action<int> onReputationChange;
 
     protected override void ResourceChanged()
     {
-        onReputationChange();
+        onReputationChange(resourceQuantity);
     }
 }

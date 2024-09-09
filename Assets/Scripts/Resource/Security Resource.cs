@@ -5,10 +5,10 @@ using System;
 
 public class SecurityResource : Resource
 {
-    public static Action onSecurityChange;
+    public static Action<int> onSecurityChange;
 
     protected override void ResourceChanged()
     {
-        onSecurityChange();
+        onSecurityChange(resourceQuantity);
     }
 }

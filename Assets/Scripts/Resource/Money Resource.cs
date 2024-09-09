@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class MoneyResource : Resource
 {
-    public static Action onMoneyChange;
+    public static Action<int> onMoneyChange;
 
     protected override void ResourceChanged()
     {
-        onMoneyChange();
+        onMoneyChange(resourceQuantity);
     }
 }

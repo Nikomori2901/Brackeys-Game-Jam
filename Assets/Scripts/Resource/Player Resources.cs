@@ -1,18 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using VInspector;
 
 public class PlayerResources : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private PlayerResources current;
+
+    // Resources
+    public MoneyResource money = new MoneyResource();
+    public ReputationResource reputation = new ReputationResource();
+    public SecurityResource security = new SecurityResource();
+
+    private void Awake()
     {
-        
+        current = this;
+        MoneyResource.onMoneyChange += MoneyChanged;
     }
 
-    // Update is called once per frame
-    void Update()
+    // Test Methods
+    [Button]
+    private void AddMoneyTest()
     {
-        
+        money.AddResource(1);
+    }
+
+    private void MoneyChanged(int quantity)
+    {
+        Debug.Log("Money Changed - " + quantity);
     }
 }
