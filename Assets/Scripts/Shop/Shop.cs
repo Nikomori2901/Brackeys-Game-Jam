@@ -7,6 +7,10 @@ public class Shop : MonoBehaviour
     public static Shop current;
 
     public int snackPrice, drinkPrice, homePrice, trinketPrice, expensivePrice;
+
+    public GameObject customerPrefab;
+    public Vector3 customerSpawnLocation;
+
     public enum GoodType
     {
         None, Snack, Drink, Home, Trinket, Expensive
@@ -44,5 +48,10 @@ public class Shop : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void SpawnCustomer()
+    {
+        Instantiate(customerPrefab, customerSpawnLocation, Quaternion.identity);
     }
 }
