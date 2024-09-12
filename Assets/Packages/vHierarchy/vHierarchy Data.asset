@@ -13,5 +13,82 @@ MonoBehaviour:
   m_Name: vHierarchy Data
   m_EditorClassIdentifier: 
   sceneDatasByGuid:
-    keys: []
-    values: []
+    keys:
+    - 
+    - db40480e51328f84a9f3997932ed020d
+    values:
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1376764095-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1707293748-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1923251882-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1026950649-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-389987268-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-5295329044242248162-5364214825794670292
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1190189995-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-8989629745529491635-450330249
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-8989629745529491635-330263020
+        values:
+        - iColor: 4
+          icon: cs Script Icon
+        - iColor: 4
+          icon: cs Script Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 0
+          icon: MeshCollider Icon
+        - iColor: 0
+          icon: MeshCollider Icon
+      goDatasByInstanceId:
+        keys: 166200002262000028620000f461000018fbffffc261000032620000086200000eb0ffffc48a0000d08a0000d68a0000a08a00006e8a0000b48a00008068ffff6e68ffff7468ffff
+        values:
+        - iColor: 4
+          icon: cs Script Icon
+        - iColor: 4
+          icon: cs Script Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 8
+          icon: MeshCollider Icon
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 2
+          icon: AvatarMask On Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 8
+          icon: MeshCollider Icon
+        - iColor: 4
+          icon: cs Script Icon
+        - iColor: 4
+          icon: cs Script Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 0
+          icon: MeshCollider Icon
+        - iColor: 0
+          icon: MeshCollider Icon

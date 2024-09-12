@@ -6,7 +6,7 @@ using VInspector;
 
 public class PlayerResources : MonoBehaviour
 {
-    private PlayerResources current;
+    public static PlayerResources current;
 
     // Resources
     public MoneyResource money = new MoneyResource();
