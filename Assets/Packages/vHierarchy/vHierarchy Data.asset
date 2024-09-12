@@ -26,32 +26,45 @@ MonoBehaviour:
     - goDatasByGlobalId:
         keys:
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1376764095-0
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1537273408-0
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1707293748-0
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1923251882-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1026950649-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-389987268-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1938869357-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1190189995-0
         values:
-        - iColor: 0
+        - iColor: 4
           icon: cs Script Icon
-        - iColor: 0
-          icon: cs Script Icon
-        - iColor: 0
+        - iColor: 4
           icon: cs Script Icon
         - iColor: 0
           icon: Canvas Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 2
+          icon: AvatarMask On Icon
+        - iColor: 8
+          icon: BoxCollider Icon
       goDatasByInstanceId:
-        keys: 4092fffff4a7ffffc6a9ffff8267000088670000a08affff4e8cffff
+        keys: 166200002262000028620000f461000018fbffffc261000032620000086200000eb0ffff
         values:
-        - iColor: 0
+        - iColor: 4
           icon: cs Script Icon
-        - iColor: 0
-          icon: cs Script Icon
-        - iColor: 0
-          icon: MeshCollider Icon
-        - iColor: 0
+        - iColor: 4
           icon: cs Script Icon
         - iColor: 0
           icon: Canvas Icon
-        - iColor: 0
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 8
           icon: MeshCollider Icon
-        - iColor: 0
-          icon: 
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 2
+          icon: AvatarMask On Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 8
+          icon: MeshCollider Icon

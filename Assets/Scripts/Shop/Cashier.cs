@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cashier : MonoBehaviour
 {
-    [SerializeField] private CustomerArea customerArea;
+    [SerializeField] public CustomerArea customerArea;
     [SerializeField] private bool occupied;
 
     void Start()
@@ -34,13 +34,11 @@ public class Cashier : MonoBehaviour
     {
         Debug.Log("Cashier Purchase");
 
-        int sellAmount = Shop.current.GetGoodPrice(customer.heldGood);
+        int sellAmount = Shop.current.GetGoodPrice(customer.goodType);
         PlayerResources.current.money.AddResource(sellAmount);
 
-        customer.heldGood = Shop.GoodType.None;
 
-
-        // send them to leave
+        customer.Leave();
 
         occupied = false;
     }

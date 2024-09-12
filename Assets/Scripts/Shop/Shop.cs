@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VInspector;
 
 public class Shop : MonoBehaviour
 {
     public static Shop current;
 
+    public Vector2 cashierLocation;
+    public Vector2 entranceLocation;
+
     public int snackPrice, drinkPrice, homePrice, trinketPrice, expensivePrice;
 
     public GameObject customerPrefab;
-    public Vector3 customerSpawnLocation;
+
+    public List<GoodStation> goodStations = new List<GoodStation>();
 
     public enum GoodType
     {
@@ -50,8 +55,9 @@ public class Shop : MonoBehaviour
         
     }
 
+    [Button]
     void SpawnCustomer()
     {
-        Instantiate(customerPrefab, customerSpawnLocation, Quaternion.identity);
+        Instantiate(customerPrefab, entranceLocation, Quaternion.identity);
     }
 }

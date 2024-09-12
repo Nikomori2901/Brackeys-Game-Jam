@@ -6,11 +6,11 @@ using VInspector;
 
 public class GoodStation : MonoBehaviour
 {
-    [SerializeField] Shop.GoodType goodType;
+    public Shop.GoodType goodType;
     [ReadOnly] public int stock = 0;
     [SerializeField] int maxStock = 0;
 
-    [SerializeField] private CustomerArea customerArea;
+    [SerializeField] public CustomerArea customerArea;
 
     [Button]
     public void Restock()
@@ -22,11 +22,16 @@ public class GoodStation : MonoBehaviour
     {
         if (HasStock())
         {
-            customer.heldGood = Shop.GoodType.None;
+            customer.holdingGood = true;
             stock -= 1;
         }
 
-        // send customer on way to cashier
+        Debug.Log("Null Check");
+        if (customer != null)
+        {
+            
+            customer.MoveTo(Shop.current.cashierLocation);
+        }
     }
 
     public bool HasStock()
@@ -36,7 +41,7 @@ public class GoodStation : MonoBehaviour
 
     public void NewCustomer(CustomerArea customerArea)
     {
-        Debug.Log("New Cashier Customer");
+        Debug.Log("New Customer");
 
         StartCoroutine(BrowsingTimer(customerArea.currentCustomer));
     }

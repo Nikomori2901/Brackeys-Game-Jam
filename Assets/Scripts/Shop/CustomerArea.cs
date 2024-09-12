@@ -16,11 +16,10 @@ public class CustomerArea : MonoBehaviour
         collisionArea = GetComponent<BoxCollider2D>();
     }
 
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(other.gameObject.name);
-        if (other.gameObject.TryGetComponent<Customer>(out Customer customer))
+        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.TryGetComponent<Customer>(out Customer customer))
         {
             currentCustomer = customer;
             Debug.Log("Customer Enter");
@@ -28,10 +27,10 @@ public class CustomerArea : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         //Debug.Log(other.gameObject.name);
-        if (other.gameObject.TryGetComponent<Customer>(out Customer customer))
+        if (collision.gameObject.TryGetComponent<Customer>(out Customer customer))
         {
             currentCustomer = null;
             Debug.Log("Customer Exit");
