@@ -53,13 +53,13 @@ public class GoodStation : MonoBehaviour
         GrabGood(customer);
     }
 
-    void Start()
+    private void OnMouseEnter()
     {
-        
+        //show popup
     }
 
-    void Update()
+    private void OnMouseExit()
     {
-        
+        //show game
     }
 }

@@ -16,18 +16,11 @@ public class PlayerResources : MonoBehaviour
     private void Awake()
     {
         current = this;
-        MoneyResource.onMoneyChange += MoneyChanged;
     }
 
-    // Test Methods
     [Button]
     private void AddMoneyTest()
     {
         money.AddResource(1);
-    }
-
-    private void MoneyChanged(int quantity)
-    {
-        Debug.Log("Money Changed - " + quantity);
     }
 }
