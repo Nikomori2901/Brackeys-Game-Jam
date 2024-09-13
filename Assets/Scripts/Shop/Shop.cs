@@ -16,12 +16,19 @@ public class Shop : MonoBehaviour
 
     public List<GoodStation> goodStations = new List<GoodStation>();
 
+    public GoodStation secondSnackStation;
+
     public enum GoodType
     {
         None, Snack, Drink, Home, Trinket, Expensive
     }
 
-    public int GetGoodPrice(GoodType goodType )
+    private void Awake()
+    {
+        current = this;
+    }
+
+    public int GetGoodPrice(GoodType goodType)
     {
         switch (goodType)
         {
@@ -40,24 +47,15 @@ public class Shop : MonoBehaviour
         }
     }
 
-    private void Awake()
-    {
-        current = this;
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     [Button]
     void SpawnCustomer()
     {
         Instantiate(customerPrefab, entranceLocation, Quaternion.identity);
+    }
+
+    public void PurchaseSnackStation()
+    {
+        secondSnackStation.gameObject.SetActive(true);
+        goodStations.Add(secondSnackStation);
     }
 }
