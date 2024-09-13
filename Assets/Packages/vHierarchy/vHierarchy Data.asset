@@ -16,6 +16,7 @@ MonoBehaviour:
     keys:
     - 
     - db40480e51328f84a9f3997932ed020d
+    - 9b4a538a1f4b7da449310e636c217702
     values:
     - goDatasByGlobalId:
         keys: []
@@ -30,10 +31,7 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1923251882-0
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1026950649-0
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-389987268-0
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-5295329044242248162-5364214825794670292
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1190189995-0
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-8989629745529491635-450330249
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-8989629745529491635-330263020
         values:
         - iColor: 4
           icon: cs Script Icon
@@ -45,16 +43,10 @@ MonoBehaviour:
           icon: BoxCollider Icon
         - iColor: 4
           icon: Camera Icon
-        - iColor: 0
-          icon: AvatarMask On Icon
         - iColor: 8
           icon: BoxCollider Icon
-        - iColor: 0
-          icon: MeshCollider Icon
-        - iColor: 0
-          icon: MeshCollider Icon
       goDatasByInstanceId:
-        keys: 166200002262000028620000f461000018fbffffc261000032620000086200000eb0ffffc48a0000d08a0000d68a0000a08a00006e8a0000b48a00008068ffff6e68ffff7468ffff
+        keys: 166200002a62000030620000f2610000c861000018fbffff0662000006fbffff0cfbffff64670000786700007e670000406700001667000030f3ffff546700003cf3ffff36f3ffff686c00007c6c0000826c0000446c00001a6c0000586c0000
         values:
         - iColor: 4
           icon: cs Script Icon
@@ -64,15 +56,33 @@ MonoBehaviour:
           icon: Canvas Icon
         - iColor: 8
           icon: BoxCollider Icon
-        - iColor: 8
-          icon: MeshCollider Icon
         - iColor: 4
           icon: Camera Icon
-        - iColor: 2
+        - iColor: 0
           icon: AvatarMask On Icon
         - iColor: 8
           icon: BoxCollider Icon
+        - iColor: 0
+          icon: MeshCollider Icon
+        - iColor: 0
+          icon: MeshCollider Icon
+        - iColor: 4
+          icon: cs Script Icon
+        - iColor: 4
+          icon: cs Script Icon
+        - iColor: 0
+          icon: Canvas Icon
         - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 8
+          icon: BoxCollider Icon
+        - iColor: 0
+          icon: MeshCollider Icon
+        - iColor: 0
           icon: MeshCollider Icon
         - iColor: 4
           icon: cs Script Icon
@@ -86,9 +96,44 @@ MonoBehaviour:
           icon: Camera Icon
         - iColor: 8
           icon: BoxCollider Icon
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-9b4a538a1f4b7da449310e636c217702-601889290-0
+        - GlobalObjectId_V1-2-9b4a538a1f4b7da449310e636c217702-527024723-0
+        - GlobalObjectId_V1-2-9b4a538a1f4b7da449310e636c217702-1970185449-0
+        - GlobalObjectId_V1-2-9b4a538a1f4b7da449310e636c217702-2025067414-0
+        - GlobalObjectId_V1-2-9b4a538a1f4b7da449310e636c217702-119136076-0
+        - GlobalObjectId_V1-2-9b4a538a1f4b7da449310e636c217702-401771612-0
+        - GlobalObjectId_V1-2-9b4a538a1f4b7da449310e636c217702-1012545965-0
+        values:
+        - iColor: 2
+          icon: 
         - iColor: 0
-          icon: AvatarMask On Icon
+          icon: Canvas Icon
         - iColor: 0
-          icon: MeshCollider Icon
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
         - iColor: 0
-          icon: MeshCollider Icon
+          icon: 
+      goDatasByInstanceId:
+        keys: bc7b0000a27b0000327c0000d444ffff787b0000987b00007424ffff
+        values:
+        - iColor: 2
+          icon: 
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 0
+          icon: 
