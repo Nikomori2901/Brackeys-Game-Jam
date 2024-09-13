@@ -21,6 +21,6 @@ public class PlayerResources : MonoBehaviour
     [Button]
     private void AddMoneyTest()
     {
-        money.AddResource(1);
+        money.AddResource(100);
     }
 }
