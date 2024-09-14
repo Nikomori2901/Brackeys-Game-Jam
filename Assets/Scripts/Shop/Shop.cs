@@ -7,8 +7,8 @@ public class Shop : MonoBehaviour
 {
     public static Shop current;
 
-    public Vector2 cashierLocation;
-    public Vector2 entranceLocation;
+    public CustomerArea cashierLocation;
+    public CustomerArea exitLocation;
 
     public int snackPrice, drinkPrice, homePrice, trinketPrice, expensivePrice;
 
@@ -21,6 +21,8 @@ public class Shop : MonoBehaviour
     public GoodStation trinketStation;
     public GoodStation homeStation;
     public GoodStation expensiveStation;
+
+    public List<Customer> customerQueue = new List<Customer>();
 
     public enum GoodType
     {
@@ -54,7 +56,7 @@ public class Shop : MonoBehaviour
     [Button]
     void SpawnCustomer()
     {
-        Instantiate(customerPrefab, entranceLocation, Quaternion.identity);
+        Instantiate(customerPrefab, exitLocation.transform.position, Quaternion.identity);
     }
 
     public void PurchaseDrinkStation()

@@ -11,17 +11,14 @@ public class Customer : MonoBehaviour
     public Shop.GoodType goodType;
     public bool holdingGood = false;
 
-    private Collider2D collider;
+    private Collider2D customerCollider;
+
+    public CustomerArea currentTarget;
 
     void Start()
     {
-        collider = GetComponent<BoxCollider2D>();
+        customerCollider = GetComponent<BoxCollider2D>();
         StartCoroutine(CheckStations());
-    }
-
-    void Update()
-    {
-        
     }
 
     private IEnumerator CheckStations()
@@ -50,16 +47,19 @@ public class Customer : MonoBehaviour
                 Debug.Log(goodStation.HasStock() + " - " + goodStation.customerArea.currentCustomer);
                 if (goodStation.HasStock() && goodStation.customerArea.currentCustomer == null)
                 {
-                    MoveTo(goodStation.customerArea.transform.position);
+                    currentTarget = goodStation.customerArea;
+                    MoveTo(goodStation.customerArea);
                     stationAvailable = true;
                 }
             }
         }
     }
 
-    public void MoveTo(Vector2 targetPosition)
+    public void MoveTo(CustomerArea targetArea)
     {
-        StartCoroutine(MoveToPosition(targetPosition));
+        this.currentTarget = targetArea;
+        Debug.Log(currentTarget);
+        StartCoroutine(MoveToPosition(currentTarget.GetPosition()));
         Debug.Log("Start Moving");
     }
 
@@ -88,8 +88,8 @@ public class Customer : MonoBehaviour
 
     public void Leave()
     {
-        collider.enabled = false;
-        StartCoroutine(MoveToExit(Shop.current.entranceLocation));
+        customerCollider.enabled = false;
+        StartCoroutine(MoveToExit(Shop.current.exitLocation.transform.position));
         Debug.Log("Start Leaving");
     }
 

@@ -21,9 +21,12 @@ public class CustomerArea : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.TryGetComponent<Customer>(out Customer customer))
         {
-            currentCustomer = customer;
-            Debug.Log("Customer Enter");
-            onCustomerEnter.Invoke();
+            if (customer.currentTarget == this && !HasCustomer())
+            {
+                currentCustomer = customer;
+                Debug.Log("Customer Enter");
+                onCustomerEnter.Invoke();
+            }
         }
     }
 
@@ -32,9 +35,12 @@ public class CustomerArea : MonoBehaviour
         //Debug.Log(other.gameObject.name);
         if (collision.gameObject.TryGetComponent<Customer>(out Customer customer))
         {
-            currentCustomer = null;
-            Debug.Log("Customer Exit");
-            onCustomerExit.Invoke();
+            if (customer.currentTarget == this)
+            {
+                currentCustomer = null;
+                Debug.Log("Customer Exit");
+                onCustomerExit.Invoke();
+            }
         }
     }
 
