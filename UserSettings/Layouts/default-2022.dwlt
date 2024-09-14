@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 40
+  controlID: 52
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -485,9 +485,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e8630000
+      m_SelectedIDs: 2e260000
       m_LastClickedID: 0
-      m_ExpandedIDs: 12f8ffff
+      m_ExpandedIDs: 3efaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -880,9 +880,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.20233254, y: 0.3204702, z: 0.032612048}
+    m_Target: {x: -0.1408363, y: -0.3837784, z: 0.04573628}
     speed: 2
-    m_Value: {x: 0.17213413, y: 0.13880792, z: 0.03551394}
+    m_Value: {x: -0.061841577, y: -0.42244422, z: 0.043179333}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -932,9 +932,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.7388015
+    m_Target: 5.4263883
     speed: 2
-    m_Value: 6.4486136
+    m_Value: 5.6820817
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1004,7 +1004,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/finalized customers
+    - Assets/Sprites/UI
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1012,16 +1012,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites/finalized customers
+  - Assets/Sprites/UI
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Brackeys Game Jam\Brackeys-Game-Jam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88630000
-    m_LastClickedID: 25480
-    m_ExpandedIDs: 00000000386300005263000000ca9a3b
+    m_SelectedIDs: 2e260000
+    m_LastClickedID: 9774
+    m_ExpandedIDs: 00000000186200003262000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1049,7 +1049,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000038630000
+    m_ExpandedIDs: 0000000018620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
