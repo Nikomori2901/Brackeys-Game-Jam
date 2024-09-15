@@ -26,7 +26,7 @@ public class PurchaseButton : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
             else
             {
-                //restock, could be a unity event
+                gameObject.SetActive(false);
             }
         }
     }

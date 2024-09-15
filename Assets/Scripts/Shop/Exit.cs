@@ -10,5 +10,7 @@ public class Exit : MonoBehaviour
         {
             area.currentCustomer.Despawn();
         }
+
+        Shop.current.SpawnCustomer();
     }
 }

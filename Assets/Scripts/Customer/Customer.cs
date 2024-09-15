@@ -10,19 +10,49 @@ public class Customer : MonoBehaviour
 
     public Shop.GoodType goodType;
     public bool holdingGood = false;
+    public SpriteRenderer spriteRenderer;
 
     private Collider2D customerCollider;
 
     public CustomerArea currentTarget;
 
+    public Sprite north, south, east, west;
+
     void Start()
     {
         customerCollider = GetComponent<BoxCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void Move()
     {
         StopAllCoroutines();
+
+        float movingAngle = Quaternion.FromToRotation(transform.position, currentTarget.transform.position).eulerAngles.z;
+        Debug.Log(movingAngle);
+        if (movingAngle > 270)
+        {
+            // North
+            spriteRenderer.sprite = north;
+        }
+
+        else if (movingAngle > 180)
+        {
+            // South
+            spriteRenderer.sprite = south;
+        }
+
+        else if (movingAngle > 90)
+        {
+            // East
+            spriteRenderer.sprite = east;
+        }
+
+        else
+        {
+            // West
+            spriteRenderer.sprite = west;
+        }
         Debug.Log("Start Moving");
         StartCoroutine(MoveToPosition(currentTarget.GetPosition()));
     }

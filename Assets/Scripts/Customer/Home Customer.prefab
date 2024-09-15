@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6703312014806558377}
   - component: {fileID: 5219984132301646892}
   m_Layer: 3
-  m_Name: Customer
+  m_Name: Home Customer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1816726091, guid: 42ca1e388e971bf4b9897919535233aa, type: 3}
+  m_Sprite: {fileID: 1498356740, guid: 01a998a461607654893a46516400af66, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,9 +102,13 @@ MonoBehaviour:
   patience: 1
   taskSpeed: 1
   moveSpeed: 0.1
-  goodType: 1
+  goodType: 3
   holdingGood: 0
   currentTarget: {fileID: 0}
+  north: {fileID: 1498356740, guid: 01a998a461607654893a46516400af66, type: 3}
+  south: {fileID: 849367126, guid: 01a998a461607654893a46516400af66, type: 3}
+  east: {fileID: -1961250982, guid: 01a998a461607654893a46516400af66, type: 3}
+  west: {fileID: 75820434, guid: 01a998a461607654893a46516400af66, type: 3}
 --- !u!50 &6703312014806558377
 Rigidbody2D:
   serializedVersion: 4
@@ -168,7 +172,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.75, y: 3.25}
+    oldSize: {x: 2.81, y: 3.31}
     newSize: {x: 1.75, y: 3.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

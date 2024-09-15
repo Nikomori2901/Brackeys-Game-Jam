@@ -11,6 +11,20 @@ public class GoodStation : MonoBehaviour
     [SerializeField] int maxStock = 0;
     [SerializeField] public CustomerArea customerArea;
     public Customer currentCustomer;
+    public GameObject restockButton;
+
+    private void Update()
+    {
+        if (stock <= 0)
+        {
+            ShowRestock();
+        }
+
+        else
+        {
+
+        }
+    }
 
     [Button]
     public void Restock()
@@ -54,5 +68,10 @@ public class GoodStation : MonoBehaviour
         yield return new WaitForSeconds(currentCustomer.taskSpeed);
 
         GrabGood();
+    }
+    
+    public void ShowRestock()
+    {
+        restockButton.SetActive(true);
     }
 }

@@ -8,6 +8,9 @@ public class Shop : MonoBehaviour
     public static Shop current;
 
     public GameObject customerPrefab;
+
+    public GameObject snackCustomer, drinkCustomer, homeCustomer, trinketCustomer, expensiveCustomer;
+
     public List<Customer> customerQueue = new List<Customer>();
 
     public List<GoodType> typesToCheck = new List<GoodType>();
@@ -37,14 +40,37 @@ public class Shop : MonoBehaviour
     private void Start()
     {
         StartCoroutine(CheckAvailable());
+        Shop.current.SpawnCustomer();
     }
 
     #region Customer Spawning Process
 
     [Button]
-    private void SpawnCustomer() // Spawn Customer
+    public void SpawnCustomer() // Spawn Customer
     {
-        Customer spawnedCustomer = Instantiate(customerPrefab, exitLocation.transform.position, Quaternion.identity).GetComponent<Customer>();
+        int rand = Random.Range(0, 4);
+        Customer spawnedCustomer;
+        switch (rand)
+        {
+            case 0:
+                spawnedCustomer = Instantiate(snackCustomer, exitLocation.transform.position, Quaternion.identity).GetComponent<Customer>();
+                break;
+            case 1:
+                spawnedCustomer = Instantiate(drinkCustomer, exitLocation.transform.position, Quaternion.identity).GetComponent<Customer>();
+                break;
+            case 2:
+                spawnedCustomer = Instantiate(homeCustomer, exitLocation.transform.position, Quaternion.identity).GetComponent<Customer>();
+                break;
+            case 3:
+                spawnedCustomer = Instantiate(trinketCustomer, exitLocation.transform.position, Quaternion.identity).GetComponent<Customer>();
+                break;
+            case 4:
+                spawnedCustomer = Instantiate(expensiveCustomer, exitLocation.transform.position, Quaternion.identity).GetComponent<Customer>();
+                break;
+            default:
+                spawnedCustomer = Instantiate(snackCustomer, exitLocation.transform.position, Quaternion.identity).GetComponent<Customer>();
+                break;
+        }
         CustomerQueueAdd(spawnedCustomer);
     }
 

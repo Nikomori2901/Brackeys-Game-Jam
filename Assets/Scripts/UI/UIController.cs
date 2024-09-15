@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
-    List<GameObject> restockButtons = new List<GameObject>();
-    List<GameObject> purchaseButtons = new List<GameObject>();
-
-    // Depending on game stae hides or displays ui
-    // displays restocks if station has already been purchassed and stock is lower than maximum
-    // OPTIONAL IF HAVE TIME: adjusts price and ui of restock based on how much stock its restocking.
+    public List<GameObject> restockButtons = new List<GameObject>();
+    public List<GameObject> purchaseButtons = new List<GameObject>();
+    public GameObject tutorialPage;
+    public GameObject tutorialButton;
 
     void Start()
     {
@@ -19,5 +17,11 @@ public class UIController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void CloseTutorial()
+    {
+        tutorialPage.SetActive(false);
+        tutorialButton.SetActive(false);
     }
 }
