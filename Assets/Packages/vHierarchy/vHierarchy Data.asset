@@ -47,21 +47,8 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1100762027-0
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1475466211-0
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1562145283-0
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-3937221348876194065-638767225879557479
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-4886824650621802828-5602691965302383098
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-3937221348876194065-1703806999
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-3937221348876194065-1680412171
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-4886824650621802828-2023600843
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-3937221348876194065-1809819941
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-3937221348876194065-1314992843
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-221189805-0
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-4886824650621802828-1592686695
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1956612605-0
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-4886824650621802828-444425552
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-4886824650621802828-462585455
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-4886824650621802828-1650270563
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-2761017123040679846-245420392
-        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-2761017123040679846-4993608077170410613
         values:
         - iColor: 4
           icon: cs Script Icon
@@ -103,38 +90,12 @@ MonoBehaviour:
           icon: 
         - iColor: 6
           icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 5
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 5
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
         - iColor: 9
           icon: cs Script Icon
-        - iColor: 5
-          icon: 
         - iColor: 9
           icon: Canvas Icon
-        - iColor: 5
-          icon: 
-        - iColor: 5
-          icon: 
-        - iColor: 5
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 2
-          icon: 
       goDatasByInstanceId:
-        keys: 96620000ce620000e862000034620000846200007c62000020620000fe620000c0620000e06200009c620000406200006e6200008c620000626200004c6200005462000076620000a6620000ba62000088660000ba660000ce6600002c660000766600006e66000018660000e6660000ac660000c66600008e66000038660000606600007e66000054660000446600004c6600006866000098660000a66600006e6e0000a06e0000b46e0000126e00005c6e0000546e0000fe6d0000cc6e0000926e0000ac6e0000746e00001e6e0000466e0000646e00003a6e00002a6e0000326e00004e6e00007e6e00008c6e000024d3ffffe6d1ffffb2d3ffffe2d2ffff4c95ffff7ad3ffffa6d2ffff248effff1a8bffffbe6e00000a83ffff3c82ffff6e81fffff0d2ffff3ed3ffff
+        keys: 506200008a6200009e620000ea6100003e62000036620000d0610000ba6200007c6200009662000056620000fe61000028620000466200001a6200000a6200001262000030620000606200006e62000072f9ffffd8fafffff2f9fffffef8ffffa4faffffbef9ffff68faffffdc61000032f9ffffa862000034faffff0cfbffffcaf8ffff86f9ffff00faffff78f9ffff
         values:
         - iColor: 4
           icon: cs Script Icon
@@ -168,86 +129,6 @@ MonoBehaviour:
           icon: BoxCollider Icon
         - iColor: 2
           icon: BoxCollider Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 6
-          icon: 
-        - iColor: 6
-          icon: 
-        - iColor: 6
-          icon: 
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: AudioEchoFilter Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 6
-          icon: 
-        - iColor: 6
-          icon: 
-        - iColor: 6
-          icon: 
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: AudioEchoFilter Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 2
-          icon: BoxCollider Icon
         - iColor: 2
           icon: BoxCollider Icon
         - iColor: 6
@@ -281,6 +162,8 @@ MonoBehaviour:
         - iColor: 5
           icon: 
         - iColor: 5
+          icon: 
+        - iColor: 2
           icon: 
         - iColor: 2
           icon: 
@@ -311,22 +194,8 @@ MonoBehaviour:
         - iColor: 0
           icon: 
       goDatasByInstanceId:
-        keys: 4c6700002a670000de670000e66700000e670000206700007a670000
-        values:
-        - iColor: 2
-          icon: 
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 0
-          icon: 
+        keys: 
+        values: []
     - goDatasByGlobalId:
         keys: []
         values: []

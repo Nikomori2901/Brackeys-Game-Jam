@@ -6,7 +6,8 @@ using UnityEngine.Events;
 public class CustomerArea : MonoBehaviour
 {
     BoxCollider2D collisionArea;
-    public Customer currentCustomer { get; set; }
+    public GoodStation goodStation;
+    [SerializeField] public Customer currentCustomer;
 
     [SerializeField] public UnityEvent onCustomerEnter;
     [SerializeField] public UnityEvent onCustomerExit;
@@ -18,7 +19,7 @@ public class CustomerArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.TryGetComponent<Customer>(out Customer customer))
         {
             if (customer.currentTarget == this && !HasCustomer())
@@ -32,10 +33,10 @@ public class CustomerArea : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //Debug.Log(other.gameObject.name);
+        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.TryGetComponent<Customer>(out Customer customer))
         {
-            if (customer.currentTarget == this)
+            if (currentCustomer == customer)
             {
                 currentCustomer = null;
                 Debug.Log("Customer Exit");

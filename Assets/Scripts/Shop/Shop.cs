@@ -7,22 +7,22 @@ public class Shop : MonoBehaviour
 {
     public static Shop current;
 
-    public CustomerArea cashierLocation;
+    public GameObject customerPrefab;
+    public List<Customer> customerQueue = new List<Customer>();
+
+    public List<GoodType> typesToCheck = new List<GoodType>();
+    public List<GoodStation> goodStations = new List<GoodStation>();
+
+    public Cashier cashier;
     public CustomerArea exitLocation;
 
     public int snackPrice, drinkPrice, homePrice, trinketPrice, expensivePrice;
-
-    public GameObject customerPrefab;
-
-    public List<GoodStation> goodStations = new List<GoodStation>();
 
     public GoodStation secondSnackStation;
     public GoodStation drinkStation;
     public GoodStation trinketStation;
     public GoodStation homeStation;
     public GoodStation expensiveStation;
-
-    public List<Customer> customerQueue = new List<Customer>();
 
     public enum GoodType
     {
@@ -33,6 +33,107 @@ public class Shop : MonoBehaviour
     {
         current = this;
     }
+
+    private void Start()
+    {
+        StartCoroutine(CheckAvailable());
+    }
+
+    #region Customer Spawning Process
+
+    [Button]
+    private void SpawnCustomer() // Spawn Customer
+    {
+        Customer spawnedCustomer = Instantiate(customerPrefab, exitLocation.transform.position, Quaternion.identity).GetComponent<Customer>();
+        CustomerQueueAdd(spawnedCustomer);
+    }
+
+    private void CustomerQueueAdd(Customer customer) // Add To Customer Queue
+    {
+        customerQueue.Add(customer);
+
+        if (!typesToCheck.Contains(customer.goodType))
+        {
+            typesToCheck.Add(customer.goodType);
+        }
+    }
+
+    private void CustomerQueueRemove(Customer customer, GoodStation targetStation) // Remove From Customer Queue
+    {
+        if (CheckCustomerType(customer.goodType) < 2)
+        {
+            typesToCheck.Remove(customer.goodType);
+        }
+        
+        targetStation.currentCustomer = customer; // Set Station Current Customer
+        customer.currentTarget = targetStation.customerArea; // Set Customer Target Area
+        customer.Move();
+
+        customerQueue.Remove(customer);
+    }
+
+    private int CheckCustomerType(GoodType type) // Check if any Customers in queue have this type.
+    {
+        int typeCustomerAmount = 0;
+        foreach (Customer customer in customerQueue.ToArray())
+        {
+            if (customer.goodType == type)
+            {
+                typeCustomerAmount++;
+            }
+        }
+
+        return typeCustomerAmount;
+    }
+
+    private GoodStation CheckStationType(GoodType goodType) // Check if any Stations of this type are available.
+    {
+        foreach (GoodStation station in goodStations.ToArray())
+        {
+            if (station.goodType == goodType && station.currentCustomer == null && station.stock > 0) // Has good type in stock and doesnt currently have a customer.
+            {
+                Debug.Log("Station Available");
+                return station;
+            }
+        }
+
+        return null;
+    }
+
+    private IEnumerator CheckAvailable() // Check if customers can be released from queue
+    {
+        while (true)
+        {
+            Debug.Log("Customer Queue Check");
+            if (customerQueue.Count > 0)
+            {
+                Debug.Log("There Is Customers");
+                foreach (GoodType goodType in typesToCheck.ToArray())
+                {
+                    //Debug.Log(goodType.ToString() + " Customers Waiting");
+                    GoodStation station = CheckStationType(goodType);
+                    if (station != null)
+                    {
+                        Debug.Log(goodType.ToString() + " Stations Available");
+                        foreach (Customer customer in customerQueue.ToArray())
+                        {
+                            if (customer.goodType == goodType && station.currentCustomer == null)
+                            {
+                                CustomerQueueRemove(customer, station);
+                                yield return new WaitForSeconds(1f);
+                            }
+                        }
+                    }
+                }
+            }
+
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
+    #endregion
+
+
 
     public int GetGoodPrice(GoodType goodType)
     {
@@ -53,12 +154,7 @@ public class Shop : MonoBehaviour
         }
     }
 
-    [Button]
-    void SpawnCustomer()
-    {
-        Instantiate(customerPrefab, exitLocation.transform.position, Quaternion.identity);
-    }
-
+    //Upgrades
     public void PurchaseDrinkStation()
     {
         drinkStation.gameObject.SetActive(true);
