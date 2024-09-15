@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1acfee15061b54d98b3f499292fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodStation: {fileID: 0}
   onCustomerEnter:
     m_PersistentCalls:
       m_Calls: []

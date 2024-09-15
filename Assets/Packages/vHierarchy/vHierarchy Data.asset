@@ -17,6 +17,7 @@ MonoBehaviour:
     - 
     - db40480e51328f84a9f3997932ed020d
     - 9b4a538a1f4b7da449310e636c217702
+    - 546de8e8464cce24cb9f5d6a128e60cd
     values:
     - goDatasByGlobalId:
         keys: []
@@ -46,6 +47,8 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1100762027-0
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1475466211-0
         - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1562145283-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-221189805-0
+        - GlobalObjectId_V1-2-db40480e51328f84a9f3997932ed020d-1956612605-0
         values:
         - iColor: 4
           icon: cs Script Icon
@@ -79,7 +82,7 @@ MonoBehaviour:
           icon: BoxCollider Icon
         - iColor: 2
           icon: BoxCollider Icon
-        - iColor: 8
+        - iColor: 2
           icon: BoxCollider Icon
         - iColor: 6
           icon: 
@@ -87,225 +90,17 @@ MonoBehaviour:
           icon: 
         - iColor: 6
           icon: 
+        - iColor: 9
+          icon: cs Script Icon
+        - iColor: 9
+          icon: Canvas Icon
       goDatasByInstanceId:
-        keys: 166200002a62000030620000f2610000c861000018fbffff0662000006fbffff0cfbffff64670000786700007e670000406700001667000030f3ffff546700003cf3ffff36f3ffff686c00007c6c0000826c0000446c00001a6c0000586c000046860000528600005886000022860000f8850000368600008eb5feff90b5feff50c1feff48c1feff56bffeff4ac1fefff0eafeffb8fefeff3cebfeff34fefeff8cebfeff56fffeff40fafeff38a5feff7aa3feff908f0000c68f0000d48f00005c8f0000e48e0000788f0000d28e0000888f0000ae8f0000f68e0000708f0000ca8e0000f88f0000b68f0000cc8f0000968f0000128f00009e8f00003c8f0000648f00006427feff5c27fefffa83feff0084feff5a77feff808f0000f483feff568f00003ef4fdfff2eafdff36c2fdff40c2fdff38c2fdff3ec2fdff3cc2fdff3ac2fdffdeeafdffe6eafdffd4eafdffcceafdffc4eafdff2cd2000050d2000062d20000d4d100001cd2000014d20000bad100006cd2000044d200005ad2000032d20000e2d1000006d2000024d20000fad10000eed10000beb0fdff3ab1fdfff4d10000ec6ffdffb0e20000dce20000f0e2000056e200009ee2000096e2000042e2000000e30000cee20000e8e20000b6e2000060e2000088e20000a6e200007ce200006ce2000074e200004423fdff7c22fdff90e200000c20fdffc8e20000
+        keys: 506200008a6200009e620000ea6100003e62000036620000d0610000ba6200007c6200009662000056620000fe61000028620000466200001a6200000a6200001262000030620000606200006e62000072f9ffffd8fafffff2f9fffffef8ffffa4faffffbef9ffff68faffffdc61000032f9ffffa862000034faffff0cfbffffcaf8ffff86f9ffff00faffff78f9ffff
         values:
         - iColor: 4
           icon: cs Script Icon
         - iColor: 4
           icon: cs Script Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 0
-          icon: AvatarMask On Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 0
-          icon: MeshCollider Icon
-        - iColor: 0
-          icon: MeshCollider Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 0
-          icon: AvatarMask On Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 0
-          icon: MeshCollider Icon
-        - iColor: 0
-          icon: MeshCollider Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 9
-          icon: StandaloneInputModule Icon
-        - iColor: 9
-          icon: 
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 9
-          icon: StandaloneInputModule Icon
-        - iColor: 9
-          icon: 
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 8
-          icon: MeshCollider Icon
-        - iColor: 8
-          icon: MeshCollider Icon
-        - iColor: 8
-          icon: MeshCollider Icon
-        - iColor: 8
-          icon: MeshCollider Icon
-        - iColor: 4
-          icon: AudioEchoFilter Icon
-        - iColor: 6
-          icon: AvatarMask On Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 8
-          icon: MeshCollider Icon
-        - iColor: 9
-          icon: StandaloneInputModule Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 4
-          icon: Camera Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: 
-        - iColor: 9
-          icon: Canvas Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 4
-          icon: AudioEchoFilter Icon
-        - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 8
-          icon: 
-        - iColor: 4
-          icon: cs Script Icon
-        - iColor: 4
-          icon: cs Script Icon
         - iColor: 9
           icon: Canvas Icon
         - iColor: 4
@@ -334,17 +129,45 @@ MonoBehaviour:
           icon: BoxCollider Icon
         - iColor: 2
           icon: BoxCollider Icon
+        - iColor: 2
+          icon: BoxCollider Icon
+        - iColor: 6
+          icon: 
+        - iColor: 6
+          icon: 
+        - iColor: 6
+          icon: 
         - iColor: 8
-          icon: BoxCollider Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 2
-          icon: BoxCollider Icon
-        - iColor: 6
           icon: 
-        - iColor: 6
+        - iColor: 5
           icon: 
-        - iColor: 6
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
+        - iColor: 5
+          icon: 
+        - iColor: 8
+          icon: 
+        - iColor: 8
+          icon: 
+        - iColor: 9
+          icon: cs Script Icon
+        - iColor: 5
+          icon: 
+        - iColor: 9
+          icon: Canvas Icon
+        - iColor: 5
+          icon: 
+        - iColor: 5
+          icon: 
+        - iColor: 5
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
+          icon: 
+        - iColor: 2
           icon: 
     - goDatasByGlobalId:
         keys:
@@ -371,33 +194,11 @@ MonoBehaviour:
         - iColor: 0
           icon: 
       goDatasByInstanceId:
-        keys: bc7b0000a27b0000327c0000d444ffff787b0000987b00007424ffff4687000024870000d8870000e0870000088700001a87000074870000
-        values:
-        - iColor: 2
-          icon: 
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 0
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 0
-          icon: Canvas Icon
-        - iColor: 0
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 2
-          icon: 
-        - iColor: 0
-          icon: 
+        keys: 
+        values: []
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+      goDatasByInstanceId:
+        keys: 
+        values: []

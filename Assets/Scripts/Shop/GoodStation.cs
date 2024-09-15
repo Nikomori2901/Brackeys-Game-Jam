@@ -9,8 +9,8 @@ public class GoodStation : MonoBehaviour
     public Shop.GoodType goodType;
     [ReadOnly] public int stock = 0;
     [SerializeField] int maxStock = 0;
-
     [SerializeField] public CustomerArea customerArea;
+    public Customer currentCustomer;
 
     [Button]
     public void Restock()
@@ -18,19 +18,19 @@ public class GoodStation : MonoBehaviour
         stock = maxStock;
     }
 
-    public void GrabGood(Customer customer)
+    public void GrabGood()
     {
+        Debug.Log("GrabGood");
         if (HasStock())
         {
-            customer.holdingGood = true;
+            currentCustomer.holdingGood = true;
             stock -= 1;
         }
 
-        Debug.Log("Null Check");
-        if (customer != null)
+        //Debug.Log("Null Check");
+        if (currentCustomer != null)
         {
-            
-            customer.MoveTo(Shop.current.cashierLocation);
+            Shop.current.cashier.QueueCustomer(currentCustomer);
         }
     }
 
@@ -39,27 +39,20 @@ public class GoodStation : MonoBehaviour
         return stock > 0;
     }
 
-    public void NewCustomer(CustomerArea customerArea)
+    public void CustomerExit()
     {
-        Debug.Log("New Customer");
-
-        StartCoroutine(BrowsingTimer(customerArea.currentCustomer));
+        currentCustomer = null;
     }
 
-    private IEnumerator BrowsingTimer(Customer customer)
+    public void StartBrowsing()
     {
-        yield return new WaitForSeconds(customer.taskSpeed);
-
-        GrabGood(customer);
+        StartCoroutine(BrowsingTimer());
     }
 
-    private void OnMouseEnter()
+    private IEnumerator BrowsingTimer()
     {
-        //show popup
-    }
+        yield return new WaitForSeconds(currentCustomer.taskSpeed);
 
-    private void OnMouseExit()
-    {
-        //show game
+        GrabGood();
     }
 }

@@ -5,41 +5,64 @@ using UnityEngine;
 public class Cashier : MonoBehaviour
 {
     [SerializeField] public CustomerArea customerArea;
-    [SerializeField] private bool occupied;
+    public Customer currentCustomer;
+    public List<Customer> customerQueue = new List<Customer>();
 
     void Start()
     {
+
     }
 
     void Update()
     {
+        if (customerQueue.Count > 0)
+        {
+            if (currentCustomer == null)
+            {
+                NextCustomer();
+            }
+        }
+    }
+
+    public void QueueCustomer(Customer customer)
+    {
+        Debug.Log("Cashier Queue Customer");
+        customer.currentTarget = customerArea;
+        customerQueue.Add(customer);
+    }
+
+    public void NextCustomer()
+    {
+        Debug.Log("Cashier Next Customer");
+        currentCustomer = customerQueue[0];
+        customerQueue.RemoveAt(0);
+
+        //currentCustomer.currentTarget.goodStation.currentCustomer = null;
         
+        currentCustomer.Move();
     }
 
-    public void NewCustomer(CustomerArea customerArea)
+    public void StartCheckout()
     {
-        Debug.Log("New Cashier Customer");
-        occupied = true;
-        StartCoroutine(CheckoutTimer(customerArea.currentCustomer));
+        StartCoroutine(CheckoutTimer());
     }
-
-    private IEnumerator CheckoutTimer(Customer customer)
+     
+    private IEnumerator CheckoutTimer()
     {
-        yield return new WaitForSeconds(customer.taskSpeed);
+        yield return new WaitForSeconds(currentCustomer.taskSpeed);
 
-        Purchase(customer);
+        Purchase();
     }
 
-    private void Purchase(Customer customer)
+    private void Purchase()
     {
         Debug.Log("Cashier Purchase");
 
-        int sellAmount = Shop.current.GetGoodPrice(customer.goodType);
+        int sellAmount = Shop.current.GetGoodPrice(currentCustomer.goodType);
         PlayerResources.current.money.AddResource(sellAmount);
 
-
-        customer.Leave();
-
-        occupied = false;
+        currentCustomer.currentTarget = Shop.current.exitLocation;
+        currentCustomer.Move();
+        currentCustomer = null;
     }
 }
